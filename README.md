@@ -38,7 +38,7 @@ HiddenVM: *insanely private!*
 
 ## How can I trust the HiddenVM AppImage file?
 
-### You don't have to. Inspect our code:
+### You don't have to. Inspect the AppImage code:
 
 - Open a Terminal and `cd` to the folder containing our AppImage.
 
@@ -48,15 +48,15 @@ HiddenVM: *insanely private!*
 
 - Once you trust the current version of HiddenVM, when new releases arrive you can track code changes by using [Meld](https://meldmerge.org) (`sudo apt install meld`). Drag and drop the old and new folders together into *Meld*, and any code differences will be highlighted.
 
-### And if you're paranoid, check the integrity of our ZIP release file:
+### Also you can check the integrity of our ZIP release file:
 
-- Download both our ZIP and the MD5.
+- Download both our ZIP and the SHA512.
 
-- Extract our AppImage and place it next to the MD5.
+- Extract our AppImage and place it next to the SHA512.
 
-- Do `md5sum -c HiddenVM-*-x86_64.md5` and it will check both the ZIP and the AppImage.
+- Do `sha512sum -c HiddenVM-*-x86_64.sha512` and it will check both the ZIP and the AppImage.
 
-### Or generate your own AppImage from our code after inspecting it:
+### Or generate your own AppImage from our source code once you trust it:
 
 1. `git clone https://github.com/aforensics/HiddenVM.git`
 
